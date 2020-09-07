@@ -32,7 +32,3 @@ set background=dark
 "let g:solarized_termcolors=256 "degraded
 colorscheme solarized
 
-"enable powerline
-set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
-set laststatus=2
-
