@@ -27,9 +27,9 @@ nnoremap <leader>s :mksession<CR>
 "enable pathogen package manager
 execute pathogen#infect()
 
-"set color scheme to solarized (degraded)
+"set color scheme to solarized
 set background=dark
-""let g:solarized_termcolors=256
+"let g:solarized_termcolors=256 "degraded
 colorscheme solarized
 
 "enable powerline
