@@ -22,9 +22,6 @@ nnoremap <leader><space> :nohlsearch<CR>
 nnoremap j gj
 nnoremap k gk
 
-"save session
-nnoremap <leader>s :mksession<CR>
-
 "enable pathogen package manager
 execute pathogen#infect()
 
