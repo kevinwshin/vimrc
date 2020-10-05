@@ -24,8 +24,10 @@ nnoremap k gk
 
 "scrolling
 set so=3 "keep 3 lines around the cursor while scrolling
-nnoremap <C-j> <C-e>
-nnoremap <C-k> <C-y>
+nnoremap <S-j> <C-e>
+nnoremap <S-k> <C-y>
+nnoremap <C-j> <S-j>
+nnoremap <C-k> <S-k>
 
 "enable pathogen package manager
 execute pathogen#infect()
