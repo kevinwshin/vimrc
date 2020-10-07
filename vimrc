@@ -14,6 +14,10 @@ syntax enable
 filetype indent on
 filetype plugin indent on
 
+"set smaller indent width for c files
+autocmd Filetype c setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd Filetype cpp setlocal shiftwidth=2 tabstop=2 softtabstop=2
+
 "highlight and unhighlight search matches
 set hlsearch
 nnoremap <leader><space> :nohlsearch<CR>
