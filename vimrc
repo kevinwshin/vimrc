@@ -10,6 +10,7 @@ set tabstop=4
 set softtabstop=4
 set expandtab
 set number
+set relativenumber
 syntax enable
 filetype indent on
 filetype plugin indent on
