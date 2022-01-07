@@ -29,10 +29,6 @@ nnoremap <leader><space> :nohlsearch<CR>
 nnoremap j gj
 nnoremap k gk
 
-"tab movement
-nnoremap <leader>n :tabnext<CR>
-nnoremap <leader>p :tabprevious<CR>
-
 "scrolling
 set so=3 "keep 3 lines around the cursor while scrolling
 nnoremap <S-j> <C-e>
