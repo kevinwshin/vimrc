@@ -10,17 +10,24 @@ set tabstop=4
 set softtabstop=4
 set expandtab
 set number
+set relativenumber
+set visualbell
 syntax enable
 filetype indent on
 filetype plugin indent on
 
-"highlight and unhighlight search matches
-set hlsearch
-nnoremap <leader><space> :nohlsearch<CR>
+"set smaller indent width for c files
+autocmd Filetype c setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd Filetype cpp setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd Filetype ts setlocal shiftwidth=2 tabstop=2 softtabstop=2
 
 "visual movement
 nnoremap j gj
 nnoremap k gk
+
+"tab movement
+nnoremap <leader>n :tabnext<CR>
+nnoremap <leader>p :tabprevious<CR>
 
 "scrolling
 set so=3 "keep 3 lines around the cursor while scrolling
@@ -28,6 +35,10 @@ nnoremap <S-j> <C-e>
 nnoremap <S-k> <C-y>
 nnoremap <C-j> <S-j>
 nnoremap <C-k> <S-k>
+
+"highlight and unhighlight search matches
+set hlsearch
+nnoremap <leader><space> :nohlsearch<CR>
 
 "enable pathogen package manager
 execute pathogen#infect()
